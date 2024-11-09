@@ -105,8 +105,8 @@ export default function PokemonCatcher() {
           <div>
 
             {
-              caughtPokemon.map((poke)=> {
-                return <p className='text-center'> {poke} </p>
+              caughtPokemon.map((poke , index)=> {
+                return <p key={index}className='text-center'> {poke} </p>
               })
             }
           </div>
